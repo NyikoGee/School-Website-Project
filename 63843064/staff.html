@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="text/html; content=utf-8" http-equiv="content type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School History</title>
+    <link rel="stylesheet" href="./index.html">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="col1">
+            <img src="./Images/WhatsApp Image 2021-09-20 at 14.03.28_auto_x2 (1).png" alt="School Logo">
+        </div>
+
+        <!-- col2 -->
+        <div id="col2">Pretoria Central High School</div>
+        <!-- This is where one can choose to display an image or text of the shcool name -->
+
+        <!-- col3 -->
+        <div id="col3">
+            <ul>
+                <lo><a href="index.html">Home</a></lo>
+                <lo><a href="request qoute.html">Request Qoute</a></lo>
+                <lo><a href="gallery.html">Gallery</a></lo>
+                <lo><a href="declaration form.html">Declaration Form</a></lo>
+                <lo><a href="staff">Staff</a></lo>
+            </ul>
+        </div>
+
+        <!-- col4 -->
+        <div id="col4">
+            <br>
+            <br>
+            <br>
+            <lo><a href="school history.html">School History</a></lo>
+            <br>
+            <br>
+            <br>
+            <lo><a href="school times.html">School Times</a></lo>
+            <br>
+            <br>
+            <br>
+            <lo><a href="school fees.html">School Fees</a></lo>
+            <br>
+            <br>
+            <br>
+            <lo><a href="why this school.html">Why This School?</a></lo>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <!-- col5 -->
+        <div id="col5">
+            <article>
+                <h1>
+                    Staff
+                </h1>
+                <script>
+                    /* Note: my code runs more smoothly on firefox broswer */
+                    if (window.XMLHttpRequest) {
+                        xmlhttp = new XMLHttpRequest();
+                    }
+                    else {
+                        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                    xmlhttp.open("GET", "staff.xml", false);
+                    xmlhttp.send();
+                    xmlDoc = xmlhttp.responseXML;
+
+                    document.write("<table border='1' width='50%' style='font-size:35px;'>");
+                    document.write("<tr><th>title</th><th>initial</th><th>surname</th><th>position</th></tr>");
+
+                    var x = xmlDoc.getElementsByTagName("title");
+                    for (i = 0; i < X.length; i++) {
+                        document.write("<tr><td>");
+                        document.write(xmlDoc.getElementsByTagName("title")[i].childNodes[0].nodeValue);
+                        document.write("</td><td>");
+
+                        document.write(xmlDoc.getElementsByTagName("initial")[i].childNodes[0].nodeValue;
+                        document.write("</td><td>");
+
+                        document.write(xmlDoc.getElementsByTagName("surname")[i].childNodes[0].nodeValue);
+                        document.write("</td><td>");
+
+                        document.write(xmlDoc.getElementsByTagName("position")[i].childNodes[0].nodeValue);
+                        document.write("</td></tr>");
+                        document.write("</table>");
+                    }
+
+                </script>
+
+                <table>
+                    <tr>
+                        <th>Initials</th>
+                        <th>Surname</th>
+                        <th>Position</th>
+                    </tr>
+                    <tr>
+                        <td>T</td>
+                        <td>Hlongwane</td>
+                        <td>Principal</td>
+                    </tr>
+                    <tr>
+                        <td>I</td>
+                        <td>Lombard</td>
+                        <td>Deputy Principal</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>Motaung</td>
+                        <td>2nd Deputy Principal</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>Beukes</td>
+                        <td>L.O HOD</td>
+                    </tr>
+                    <tr>
+                        <td>N</td>
+                        <td>Petje</td>
+                        <td>EMS Teacher, Grade 9</td>
+                    </tr>
+                    
+                </table>
+                <p> 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </article>
+        </div>
+
+        <!-- col6 -->
+        <div id="col6">
+            <script type="text/javascript" src="./caledar.js"></script>
+            <div id="cal">
+                <div id="prev">&lt; previous</div>
+                <div id="next">next &gt;</div>
+                <script src="./jquery-1.11.1.js"></script>
+                <script src="./subscript.js"></script>
+                <script src="./caledar.js"></script>
+                <table>
+                    <caption>September 2021</caption>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+            </div>
+        </div> <!-- close wrapper -->
+        <!-- footer -->
+        <div id="footer">
+            <p>Contact details are as follows
+                <br>
+                Physical address: 321 Servaas Str, Pretoria West, Pretoria, 01783
+                <a href="./maps.html">Click here for directions</a>
+                <br>
+                Phone numbers: (012) 327 5772
+                <br>
+                e-mail addresses: <a href="">Ptacentralschool@gmail.com</a>
+                <br>
+            </p>
+        </div>
+</body>
+
+</html>

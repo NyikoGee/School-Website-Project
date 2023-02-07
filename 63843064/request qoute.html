@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="text/html; content=utf-8"        http-equiv="content type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Qoute</title>
+    <link rel="stylesheet" href="./styles3.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="col1">
+            <img src="./Images/WhatsApp Image 2021-09-20 at 14.03.28_auto_x2 (1).png" alt="School Logo">
+        </div>
+
+        <!-- col2 -->
+        <div id="col2">Pretoria Central High School</div>
+        <!-- This is where one can choose to display an image or text of the shcool name -->
+
+        <!-- col3 -->
+        <div id="col3">
+            <ul>
+                <lo><a href="index.html">Home</a></lo>
+                <lo><a href="request qoute.html">Request Qoute</a></lo>
+                <lo><a href="gallery.html">Gallery</a></lo>
+                <lo><a href="declaration form.html">Declaration Form</a></lo>
+            </ul>
+        </div>
+
+        <!-- col4 -->
+        <div id="col4">
+            <br>
+            <br>
+            <lo><a href="school history.html">School History</a></lo>
+            <br>
+            <br>
+            <lo><a href="school times.html">School Times</a></lo>
+            <br>
+            <br>
+            <lo><a href="school fees.html">School Fees</a></lo>
+            <br>
+            <br>
+            <lo><a href="why this school.html">Why This School?</a></lo>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <!-- col5 -->
+        <div id="col5">
+            <script src="./forms validation.js"></script>
+            <div class="errors"></div>
+            <form action="request.php" method="POST" onsubmit="return validateForm()">
+                <fieldset>
+                    <legend>
+                        Contact details
+                    </legend>
+                <label for="Fname">First name</label>
+                <input type="text" id='fname' name=first_name>
+                <span id="fname-error" class="text-danger"></span>
+                <br>
+                <!-- the span is for code validation error alert -->
+                <label for="Lname">Last name</label>
+                <input type="text" id="lname" name="last_name">
+                <span id="lname-error" class="text-danger"></span>
+                <br>
+                <!-- the span is for code validation error alert -->
+                <label for="Street">Street address</label>
+                <input type="text" id="street" name="street_address">
+                <span id="street-error" class="text-danger"></span>
+                <br>
+                <label for="complex">Complex (if applicable)</label>
+                <input type="text">
+                <br>
+                <br>
+                <!-- the span is for code validation error alert -->
+                <label for="Email">Email address</label>
+                <input type="email" id="email" name="email_address" placeholder="enter email">
+                <span id="lname-error" class="text-danger"></span>
+                <br>
+                <!-- the span is for code validation error alert -->
+                <label for="Phone">Phone number</label>
+                <input type="text" id="phone" name="phone_number" placeholder="enter phone number">
+                <span id="pnumber-error" class="text-danger"></span>
+                </fieldset>
+                <br>
+                <br>
+                
+                <fieldset>
+                    <legend>
+                        Residential address
+                    </legend>
+                <label for="Suburb">Suburb</label>
+                <input type="text" id="suburb" name="subrub">
+                <span id="suburb-error" class="text-danger"></span>
+                <br>
+                <!-- the span is for code validation error alert -->
+                <label for="Town">Town</label>
+                <input type="text" id="town" name="town">
+                <span id="town-error" class="text-danger"></span>
+                <br>
+                <!-- the span is for code validation error alert -->
+                <label for="Postal">Postal code</label>
+                <input type="text" id="pcode" name="postal_code">
+                <span id="pcode-error" class="text-danger"></span>
+                </fieldset>
+                <!-- I have included the email input type so that the input can be validated to avoid the user from entering wrong character fields -->
+                <br>
+                <fieldset>
+                    <legend>
+                        Please select your preferred sport(s)
+                    </legend>
+                <input type="checkbox" value="Netball" name="sport"  id="">Netball
+                <!-- <br> -->
+                <input type="checkbox" value="Soccer" name="sport"  id="">Soccer
+                <!-- <br> -->
+                <input type="checkbox" value="Rugby" name="sport"  id="">Rugby
+                <br>
+                <br>
+                <!-- I have added line break so that my checkox can be arranged in a form of a table -->
+                <input type="checkbox" value="Chess" name="sport" id="">Chess
+                <!-- <br> -->
+                <input type="checkbox" value="Swimming" name="sport" id="">Swimming
+                <!-- <br> -->
+                <input type="checkbox" value="Athletics" name="sport" id="">Athletics
+                <!-- I have added line breaks in between the checkboxes so that the selection can be ordered as a list wihtout using the list function -->
+                </fieldset>
+
+                <br>
+                <br>
+
+
+
+
+                <p>Qoute request date:
+                    
+                    <select name="month">
+                        <option value=""></option>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                    <select name="year">
+                        <option value=""></option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                    ></select>
+                    <select name="Day">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                </p>
+                <p>
+                    Username: <input type="text" size="30">
+                            <span id="username-error" class="text-danger"></span>
+                    Password: <input type="password" size="30" id="password">
+                            <span id="password-error" class="text-danger"></span>
+                </p>
+                <br>
+                <p> Please submit you form here: <br>
+                    <input type="submit" value="Submit your form">
+                    <input type="reset" value="Clear the form">
+                    <input type="reset" value="Cancel registration">
+                </p>
+            
+            </form>
+            <section id="profile">
+                <h2>Profile</h2>
+                <div id="usernameSection">
+                    <h3>Username</h3>
+                    <p id="profileUsername"></p>
+                </div>
+                <div id="emailSection">
+                    <h3>Email address</h3>
+                    <p id="profileEmail"></p>
+                </div>
+                <div id="passwordSection">
+                    <h3>Password</h3>
+                    <p id="profilePassword"></p>
+                </div>
+            </section>
+        </div>
+        <!-- footer -->
+        <div id="footer">
+                <p>Contact details are as follows
+                    <br>
+                    Physical address: 321 Servaas Str, Pretoria West, Pretoria, 0183
+                    <br>
+                    Phone numbers: (012) 327 5772
+                    <br>
+                    e-mail addresses: <a href="">Ptacentralschool@gmail.com</a>
+                    <br>
+                </p>
+        </div>
+    </div> <!-- close wrapper -->
+
+        
+    <div id="col6">
+
+
+<script src="./jquery.js"></script>
+</body>

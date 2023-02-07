@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<te>
+                <staff>
+                    <tr>
+                        <th>Initials</th>
+                        <th>Surname</th>
+                        <th>Position</th>
+                    </tr>
+                    <tr>
+                        <td>T</td>
+                        <td>Hlongwane</td>
+                        <td>Principal</td>
+                    </tr>
+                    <tr>
+                        <td>I</td>
+                        <td>Lombard</td>
+                        <td>Deputy Principal</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>Motaung</td>
+                        <td>2nd Deputy Principal</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>Beukes</td>
+                        <td>L.O HOD</td>
+                    </tr>
+                    <tr>
+                        <td>N</td>
+                        <td>Petje</td>
+                        <td>EMS Teacher, Grade 9</td>
+                    </tr>
+</te>

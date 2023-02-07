@@ -1,0 +1,268 @@
+/* apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* adding styles to columns */
+/* main column/content */
+#wrapper {
+  width: 100%;
+  height: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+  border: 2px solid thin black;
+  background-image: linear-gradient(
+      rgba(13, 20, 51, 0.7),
+      rgba(167, 170, 184, 0.7)
+    ),
+    url(./Images/Background.PNG);
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+/* The subnavigation menu */
+.subnav {
+  float: right;
+  overflow: hidden;
+}
+/* Subnav button */
+.subnav .subnavbtn {
+  color: aliceblue;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 65px;
+  text-align: right;
+
+  /* the border underneath is to make the navigation bar square */
+  border: solid 1px;
+  background-color: #9999af;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+/* Styling the content of the subnav */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(73, 71, 77);
+  width: 100%;
+  z-index: 0;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: right;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+#col1 {
+  width: 25%;
+  height: 45%;
+  float: left;
+  border-right: solid thin black;
+  background-image: url(./Images/WhatsApp\ Image\ 2021-09-20\ at\ 14.03.28.jpeg);
+}
+#col4 {
+  width: 25%;
+  height: 45%;
+  float: left;
+  border: solid thin black;
+  clear: both;
+  text-align: center;
+}
+#col4 a {
+  color: white;
+  font-family: serif;
+  font-size: 27px;
+  text-align: center;
+  text-decoration: none;
+}
+/* the code underneath adds a underline hover effect over the vertical navigation bar */
+#col4 a:hover {
+  text-decoration: underline;
+}
+h1 {
+  vertical-align: center;
+}
+#col2 {
+  width: 75%;
+  height: 22.5%;
+  float: right;
+  border: solid thin black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 75px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
+  color: aliceblue;
+}
+#col3 {
+  width: 75%;
+  height: 22.5%;
+  float: right;
+  border: solid thin black;
+  font-size: 2em;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+#col3 a {
+  color: aliceblue;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 10px;
+  /* the border underneath is to customise the navigation bar to be squared */
+  border: solid 1px;
+  background-color: #9999af;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+/* I am adding hover effects over the navigation bars */
+#col3 a:hover {
+  color: #fff;
+  background-color: #042029;
+  font-weight: bold;
+}
+#col5 {
+  width: 52.5%;
+  height: 46%;
+  float: left;
+  border: solid thin black;
+  background-color: #fff;
+}
+#col5 p {
+  display: inherit;
+  padding: 10px;
+  margin: 10px;
+}
+#col5 h1 {
+  display: block;
+  padding: 15px;
+  margin: 15px;
+}
+#col6 {
+  width: 22.5%;
+  height: 45%;
+  float: right;
+  border: solid thin black;
+}
+/* #footer {
+  width: 100%;
+  height: 100%;
+  float: right;
+  border-right: solid thin black; 
+}*/
+.container {
+  max-width: 75px;
+  font-family: sans-serif;
+  margin: 50px;
+  padding-top: 30px;
+}
+.month {
+  text-align: center;
+  font-size: 2.6em;
+  color: #fff;
+  padding: 10px;
+  letter-spacing: 1px;
+  border: 5px solid thin #fff;
+  background-color: rgba(red, green, blue, alpha);
+}
+#cal {
+  width: ;
+  display: block;
+  position: ;
+  padding: 10px;
+  margin: 10px;
+  top: 65px;
+  left: 230px;
+  float: left;
+  color: black;
+  background: linear-gradient(45deg, #d6dedf, #aaa4bb);
+  padding: 10px;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#cal table {
+  clear: both;
+}
+#cal table caption {
+  font-weight: bold;
+  font-size: 14pt;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: white;
+}
+#cal table th {
+  text-align: center;
+}
+#cal table th,
+#cal table td {
+  width: 2em;
+  height: 2em;
+  padding: 4px;
+}
+#cal table td {
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+#prev {
+  padding: 4px;
+  float: left;
+  cursor: pointer;
+}
+#next {
+  padding: 4px;
+  float: right;
+  cursor: pointer;
+}
+#cal table td.futuredate {
+  color: white;
+}
+#cal table td.futuredate:hover,
+#prev:hover,
+#next:hover,
+#close:hover {
+  background: rgb(33, 33, 34);
+  color: white;
+}
+td,
+th {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+#footer {
+  width: 100%;
+  height: 100px;
+  float: left;
+  margin-left: ;
+  clear: both;
+  border: solid thin black;
+  background-color: #fff;
+}
+#footer p {
+  text-align: center;
+  font: inherit;
+}
